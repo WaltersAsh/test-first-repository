@@ -6,21 +6,23 @@ Data Structures
 
   Array
   
+  ArrayDeque
+
   ArrayList
-  
-  LinkedList
-  
-  Stack
-  
-  Queue
-  
-  Tree
   
   HashMap
   
-  TreeMap
-  
   HashSet
+  
+  LinkedList
+  
+  Queue
+  
+  Stack
+  
+  Tree
+  
+  TreeMap
   
   TreeSet
   
