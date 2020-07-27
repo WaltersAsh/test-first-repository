@@ -5,16 +5,18 @@ Testing git commands in command-line!
 Revising commands to help myself work in group projects
 
 Common commands
-- `git clone <url>`
-- `git status`
-- `git commit -m <message>`
-- `git commit`
-- `git push`
-- `git pull`
-- `git branch`
-- `git branch <branchname>`
-- `git checkout <branchname>`
-- `git merge master`
+- `git clone <url>`            clone an existing repo onto local machine
+- `git status`                 shows state of branch alongside changes to files 
+- `git add <filename>`         adds the modified file to be ready for commit
+- `git commit -m <message>`    commit the changes with a message
+- `git commit`                 commit the changes to be ready for push
+- `git push`                   push all commits from local repo to cloud repo
+- `git pull`                   pull all changes from cloud repo to local repo
+- `git branch`                 shows current branch and local branches
+- `git branch <branchname>`    create a new branch
+- `git branch -d <branchname>` delete existing local branch 
+- `git checkout <branchname>`  switch to desired branch            
+- `git merge master`           merge master to current branch
 
 ### Setting up repo
 - Go to profile on web -> Repositories -> New (green button)
