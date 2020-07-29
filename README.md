@@ -20,7 +20,7 @@ Revising commands to help myself work in group projects
 | `git merge <branch-name>`     | merge branch to desired branch                                                                                                        | 
 | `git merge --abort`           | undo merge conflicts                                                                                                                  | 
 |                               | can also try `git revert HEAD` which reverts reference to last commit in current branch (use `cat .git/HEAD` in commandline to see)   | 
-| `git stash`                   | save the modifications made to files in repo locally                                                                                  |                                    
+| `git stash`                   | save the modifications made to files in repo locally (temporary)                                                                                | `git stash apply`             | apply the modifications made to files in repo locally                                    
 
 ### Setting up repo
 - Go to profile on web -> Repositories -> New (green button)
@@ -48,17 +48,23 @@ Pull -> Add -> Commit -> Push
 ### Branching
 - Use `git pull` to update the master branch
 - use `git branch` to list all active branches in the repo
-- Use `git branch <branchname>` to create a copy of your master branch under the `<branchname>`
+- Use `git branch <branch-name>` to create a copy of your master branch under the `<branchname>`
 - A `<branchname>` should be a new feature added or something that you've modified
-- Use `git checkout <branchname>` to switch and start working on the desired branch
+- Use `git checkout <branch-name>` to switch and start working on the desired branch
 - This will not affect anything on the master branch
 
 ### Pull requests
 - Use `git checkout master` to switch to master branch
 - Use `git pull` to update changes
-- Use `git checkout <branchname>` to switch batch to the branch working on
+- Use `git checkout <branch-name>` to switch batch to the branch working on
 - Use `git merge master` to request merge back to `<branchname>` branch
 - If successful, use `git push`
 - Go back to the webpage of the repo and create a pull request
 - Get a team member to review and create the merge request
 
+### Making changes on the wrong branch
+If you've messed up and modified files in the wrong branch and need to switch to another (ie. modified master but meant to do it in game-patches)
+- Use `git stash` to save changes made in modified files
+- Use `git checkout <branch-name>
+- Use `git merge master` to make sure if checkouted branch is not out of date
+- Use `git stash apply` to apply those changes to branch (will still have to add, commit and push)
