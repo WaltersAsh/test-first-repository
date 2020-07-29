@@ -1,22 +1,26 @@
 # test-first-repository
-Testing git commands in command-line!
+Testing git commands in command-line - will be updated when I learn something new/fix up gaps in my understanding of git!
 
 ## Github Basics
-Revising commands to help myself work in group projects
+Revising commands to help myself work in group projects 
 
-Common commands
-- `git clone <url>`            clone an existing repo onto local machine
-- `git status`                 shows state of branch alongside changes to files 
-- `git add <filename>`         adds the modified file to be ready for commit
-- `git commit -m <message>`    commit the changes with a message
-- `git commit`                 commit the changes to be ready for push
-- `git push`                   push all commits from local repo to cloud repo
-- `git pull`                   pull all changes from cloud repo to local repo
-- `git branch`                 shows current branch and local branches
-- `git branch <branchname>`    create a new branch
-- `git branch -d <branchname>` delete existing local branch 
-- `git checkout <branchname>`  switch to desired branch            
-- `git merge master`           merge master to current branch
+| Command                       | Details and Explaination                                                                                                              |
+| ------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------:|
+| `git clone <url>`             | clone an existing repo onto local machine                                                                                             | 
+| `git status`                  | shows state of branch alongside changes to files                                                                                      | 
+| `git add <file-name>`         | adds/tracks the modified file to be ready to commit                                                                                   | 
+| `git commit -m <message>`     | commit the changes with a message to be ready to push                                                                                 | 
+| `git commit`                  | commit the changes to be ready to push                                                                                                | 
+| `git push`                    | push all commits from local repo to cloud repo                                                                                        | 
+| `git pull`                    | pull all changes from cloud repo to local repo                                                                                        | 
+| `git branch`                  | shows current branch and local branches                                                                                               | 
+| `git branch <branch-name>`    | create a new branch                                                                                                                   | 
+| `git branch -d <branch-name>` | delete existing local branch                                                                                                          | 
+| `git checkout <branch-name>`  | switch to desired branch                                                                                                              | 
+| `git merge <branch-name>`     | merge branch to desired branch                                                                                                        | 
+| `git merge --abort`           | undo merge conflicts                                                                                                                  | 
+|                               | can also try `git revert HEAD` which reverts reference to last commit in current branch (use `cat .git/HEAD` in commandline to see)   | 
+| `git stash`                   | save the modifications made to files in repo locally                                                                                  |                                    
 
 ### Setting up repo
 - Go to profile on web -> Repositories -> New (green button)
