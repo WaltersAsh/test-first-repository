@@ -20,7 +20,7 @@ Revising commands to help myself work in group projects
 | `git merge <branch-name>`     | merge branch to desired branch                                                                                                        | 
 | `git merge --abort`           | undo merge conflicts                                                                                                                  | 
 |                               | can also try `git revert HEAD` which reverts reference to last commit in current branch (use `cat .git/HEAD` in commandline to see)   | 
-| `git stash`                   | save the modifications made to files in repo locally (temporary)                                                                                | `git stash apply`             | apply the modifications made to files in repo locally                                    
+| `git stash`                   | save the modifications made to files in repo locally (temporary)                                                                      |          | `git stash apply`             | apply the modifications made to files in repo locally                                                                                 |
 
 ### Setting up repo
 - Go to profile on web -> Repositories -> New (green button)
@@ -61,6 +61,13 @@ Pull -> Add -> Commit -> Push
 - If successful, use `git push`
 - Go back to the webpage of the repo and create a pull request
 - Get a team member to review and create the merge request
+
+### Updating branches and keeping up with master
+Branch maintenance is key in managing multiple branches for multiple features. In order to not let branches get too behind:
+- Use `git checkout <branch-name>` to access branch that is needed to be caught up
+- Use `git pull` to sync any changes on the branch
+- Use `git merge master` to pull master into branch
+- Use `git push` to push and update branch to achieve the same status as master
 
 ### Making changes on the wrong branch
 If you've messed up and modified files in the wrong branch and need to switch to another (ie. modified master but meant to do it in game-patches)
