@@ -15,29 +15,7 @@ Testing git commands in command-line - will be updated when I learn something ne
     + [Git merge vs rebase](#git-merge-vs-rebase)
 
 ## Github Basics
-Revising commands to help myself work in group projects 
-
-| Command                       | Details and Explaination                                                                                                              |
-| ------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `git clone <url>`             | clone an existing repo onto local machine                                                                                             | 
-| `git status`                  | shows state of branch alongside changes to files                                                                                      | 
-| `git add <file-name>`         | adds/tracks the modified file to be ready to commit                                                                                   | 
-| `git commit -m <message>`     | commit the changes with a message to be ready to push                                                                                 | 
-| `git commit`                  | commit the changes to be ready to push                                                                                                | 
-| `git push`                    | push all commits from local repo to cloud repo                                                                                        | 
-| `git pull`                    | pull all changes from cloud repo to local repo                                                                                        | 
-| `git branch`                  | shows current branch and local branches                                                                                               | 
-| `git branch <branch-name>`    | create a new branch                                                                                                                   | 
-| `git branch -d <branch-name>` | delete existing local branch                                                                                                          | 
-| `git checkout <branch-name>`  | switch to desired branch                                                                                                              | 
-| `git merge <branch-name>`     | merge branch to desired branch                                                                                                        | 
-| `git merge --abort`           | undo merge conflicts                                                                                                                  | 
-|                               | can also try `git revert HEAD` which reverts reference to last commit in current branch (use `cat .git/HEAD` in commandline to see)   | 
-| `git stash`                   | save the modifications made to files in repo locally (temporary)                                                                      |          | `git stash apply`             | apply the modifications made to files in repo locally                                                                                 |
-| `git log`                     | shows a list of commits displaying messages and users that were made                                                                  |
-| `git rebase`                  | apply a 'cleaner merge' to a branch by placing the commits on the source branch to the target, as if the commits were made in the     |
-|                               | target in the first place (WARNING - DOESN'T PRESERVE HISTORY, USE MERGE IF UNSURE)                                                                          
-
+Basics that combine both the commandline and website.
 
 ### Setting up repo
 - Go to profile on web -> Repositories -> New (green button)
@@ -79,6 +57,32 @@ Pull -> Add -> Commit -> Push
 - Go back to the webpage of the repo and create a pull request
 - Get a team member to review and create the merge request
 
+## Commandline commands 
+Documenting commands to help myself work in group projects!
+
+| Command                       | Details and Explaination                                                                                                              |
+| ------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| `git clone <url>`             | clone an existing repo onto local machine                                                                                             | 
+| `git status`                  | shows state of branch alongside changes to files                                                                                      | 
+| `git add <file-name>`         | adds/tracks the modified file to be ready to commit                                                                                   | 
+| `git commit -m <message>`     | commit the changes with a message to be ready to push                                                                                 | 
+| `git commit`                  | commit the changes to be ready to push                                                                                                | 
+| `git push`                    | push all commits from local repo to cloud repo                                                                                        | 
+| `git pull`                    | pull all changes from cloud repo to local repo                                                                                        | 
+| `git branch`                  | shows current branch and local branches                                                                                               | 
+| `git branch <branch-name>`    | create a new branch                                                                                                                   | 
+| `git branch -d <branch-name>` | delete existing local branch                                                                                                          | 
+| `git checkout <branch-name>`  | switch to desired branch                                                                                                              | 
+| `git merge <branch-name>`     | merge branch to desired branch                                                                                                        | 
+| `git merge --abort`           | undo merge conflicts                                                                                                                  | 
+|                               | can also try `git revert HEAD` which reverts reference to last commit in current branch (use `cat .git/HEAD` in commandline to see)   | 
+| `git stash`                   | save the modifications made to files in repo locally (temporary)                                                                      |          | `git stash apply`             | apply the modifications made to files in repo locally                                                                                 |
+| `git log`                     | shows a list of commits displaying messages and users that were made                                                                  |
+| `git rebase`                  | apply a 'cleaner merge' to a branch by placing the commits on the source branch to the target, as if the commits were made in the     |
+|                               | target in the first place (WARNING - DOESN'T PRESERVE HISTORY, USE MERGE IF UNSURE)                                                                          
+
+## Key lessons that I paid a price for
+
 ### Updating branches and keeping up with master
 Branch maintenance is key in managing multiple branches for multiple features. In order to not let branches get too behind:
 - Use `git checkout <branch-name>` to access branch that is needed to be caught up
@@ -89,7 +93,7 @@ Branch maintenance is key in managing multiple branches for multiple features. I
 ### Making changes on the wrong branch
 If you've messed up and modified files in the wrong branch and need to switch to another (ie. modified master but meant to do it in game-patches)
 - Use `git stash` to save changes made in modified files
-- Use `git checkout <branch-name>
+- Use `git checkout <branch-name>`
 - Use `git merge master` to make sure if checkouted branch is not out of date
 - Use `git stash apply` to apply those changes to branch (will still have to add, commit and push)
 
