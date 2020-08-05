@@ -10,6 +10,8 @@ Testing git commands in command-line - will be updated when I learn something ne
     + [Repo cycle](#repo-cycle)
     + [Branching](#branching)
     + [Pull requests](#pull-requests)
+  * [Commandline commands](#commandline-commands)
+  * [Key lessons that I paid a price for](#key-lessons-that-i-paid-a-price-for)
     + [Updating branches and keeping up with master](#updating-branches-and-keeping-up-with-master)
     + [Making changes on the wrong branch](#making-changes-on-the-wrong-branch)
     + [Git merge vs rebase](#git-merge-vs-rebase)
