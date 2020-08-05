@@ -1,6 +1,19 @@
 # test-first-repository
 Testing git commands in command-line - will be updated when I learn something new or fix up gaps in my understanding of git!
 
+- [test-first-repository](#test-first-repository)
+  * [Github Basics](#github-basics)
+    + [Setting up repo](#setting-up-repo)
+    + [Clone repo locally](#clone-repo-locally)
+    + [Updating files](#updating-files)
+    + [Regular routines](#regular-routines)
+    + [Repo cycle](#repo-cycle)
+    + [Branching](#branching)
+    + [Pull requests](#pull-requests)
+    + [Updating branches and keeping up with master](#updating-branches-and-keeping-up-with-master)
+    + [Making changes on the wrong branch](#making-changes-on-the-wrong-branch)
+    + [Git merge vs rebase](#git-merge-vs-rebase)
+
 ## Github Basics
 Revising commands to help myself work in group projects 
 
