@@ -83,7 +83,8 @@ Documenting commands to help myself work in group projects!
 | `git rebase`                  | apply a 'cleaner merge' to a branch by placing the commits on the source branch to the target, as if the commits were made in the     |
 |                               | target in the first place (WARNING - DOESN'T PRESERVE HISTORY, USE MERGE IF UNSURE)                                                                          
 
-## Key lessons that I paid a price for
+## Key lessons
+Important lessons that I've paid a hefty price for.
 
 ### Updating branches and keeping up with master
 Branch maintenance is key in managing multiple branches for multiple features. In order to not let branches get too behind:
