@@ -1,11 +1,11 @@
 # test-first-repository
-Testing git commands in command-line - will be updated when I learn something new/fix up gaps in my understanding of git!
+Testing git commands in command-line - will be updated when I learn something new or fix up gaps in my understanding of git!
 
 ## Github Basics
 Revising commands to help myself work in group projects 
 
 | Command                       | Details and Explaination                                                                                                              |
-| ------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------:|
+| ------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | `git clone <url>`             | clone an existing repo onto local machine                                                                                             | 
 | `git status`                  | shows state of branch alongside changes to files                                                                                      | 
 | `git add <file-name>`         | adds/tracks the modified file to be ready to commit                                                                                   | 
@@ -21,6 +21,10 @@ Revising commands to help myself work in group projects
 | `git merge --abort`           | undo merge conflicts                                                                                                                  | 
 |                               | can also try `git revert HEAD` which reverts reference to last commit in current branch (use `cat .git/HEAD` in commandline to see)   | 
 | `git stash`                   | save the modifications made to files in repo locally (temporary)                                                                      |          | `git stash apply`             | apply the modifications made to files in repo locally                                                                                 |
+| `git log`                     | shows a list of commits displaying messages and users that were made                                                                  |
+| `git rebase`                  | apply a 'cleaner merge' to a branch by placing the commits on the source branch to the target, as if the commits were made in the     |
+|                               | target in the first place (WARNING - DOESN'T PRESERVE HISTORY, USE MERGE IF UNSURE)                                                                          
+
 
 ### Setting up repo
 - Go to profile on web -> Repositories -> New (green button)
@@ -75,3 +79,6 @@ If you've messed up and modified files in the wrong branch and need to switch to
 - Use `git checkout <branch-name>
 - Use `git merge master` to make sure if checkouted branch is not out of date
 - Use `git stash apply` to apply those changes to branch (will still have to add, commit and push)
+
+### Git merge vs rebase
+A merge preserves the branch history, rebase doesn't. A merge should be use on public branches as the history of the commits made are important. A history of contributions made by other users should be preserved. A rebase should be use on private branches or on personal branches exclusively as it 'rewrites history' and leaves no trace, as if it always was on the master branch. If you're unsure, always merge! 
