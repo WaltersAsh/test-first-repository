@@ -81,7 +81,8 @@ Documenting commands to help myself work in group projects!
 | `git stash`                   | save the modifications made to files in repo locally (temporary)                                                                      |          | `git stash apply`             | apply the modifications made to files in repo locally                                                                                 |
 | `git log`                     | shows a list of commits displaying messages and users that were made                                                                  |
 | `git rebase`                  | apply a 'cleaner merge' to a branch by placing the commits on the source branch to the target, as if the commits were made in the     |
-|                               | target in the first place (WARNING - DOESN'T PRESERVE HISTORY, USE MERGE IF UNSURE)                                                                          
+|                               | target in the first place (WARNING - DOESN'T PRESERVE HISTORY, USE MERGE IF UNSURE)                                                   |
+| `git mv <current-filename> <new-filename>`| rename a file using current file name to new file name                                                                     |
 
 ## Key lessons
 Important lessons that I've paid a hefty price for.
@@ -102,3 +103,5 @@ If you've messed up and modified files in the wrong branch and need to switch to
 
 ### Git merge vs rebase
 A merge preserves the branch history, rebase doesn't. A merge should be use on public branches as the history of the commits made are important. A history of contributions made by other users should be preserved. A rebase should be use on private branches or on personal branches exclusively as it 'rewrites history' and leaves no trace, as if it always was on the master branch. If you're unsure, always merge! 
+
+
