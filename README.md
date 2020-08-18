@@ -82,7 +82,8 @@ Documenting commands to help myself work in group projects!
 | `git log`                     | shows a list of commits displaying messages and users that were made                                                                  |
 | `git rebase`                  | apply a 'cleaner merge' to a branch by placing the commits on the source branch to the target, as if the commits were made in the     |
 |                               | target in the first place (WARNING - DOESN'T PRESERVE HISTORY, USE MERGE IF UNSURE)                                                   |
-| `git mv <current-filename> <new-filename>`| rename a file using current file name to new file name                                                                     |
+| `git mv <current-filename> <new-filename>`| rename a file using current file name to new file name                                                                    |
+| `git reset --hard HEAD`       | reset all local changes on local repo                                                                                                 |
 
 ## Key lessons
 Important lessons that I've paid a hefty price for.
