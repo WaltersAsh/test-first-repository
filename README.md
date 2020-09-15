@@ -84,6 +84,7 @@ Documenting commands to help myself work in group projects!
 |                               | target in the first place (WARNING - DOESN'T PRESERVE HISTORY, USE MERGE IF UNSURE)                                                   |
 | `git mv <current-filename> <new-filename>`| rename a file using current file name to new file name                                                                    |
 | `git reset --hard HEAD`       | reset all local changes on local repo                                                                                                 |
+| `git clean`                   | -n display list of files that will be cleared, -f delete the files                                                                    |
 
 ## Key lessons
 Important lessons that I've paid a hefty price for.
